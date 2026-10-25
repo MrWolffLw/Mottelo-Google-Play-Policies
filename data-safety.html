@@ -1,15 +1,50 @@
 <!doctype html>
-<html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Sécurité des données — Mottelo</title>
-<style>body{max-width:850px;margin:auto;padding:32px 20px;font:16px/1.7 system-ui;color:#33265F;background:#EEEAFD}a{color:inherit}h1,h2{line-height:1.2}.notice{padding:14px;border:1px solid #b7acd9;border-radius:12px;background:#fff}li{margin:.5em 0}</style></head><body>
-<p><a href="index.html">← Informations légales</a></p><h1>Sécurité des données — Mottelo</h1><p><strong>Dernière mise à jour : 24 octobre 2026</strong></p>
-<div class="notice"><strong>Important :</strong> cette page publique ne remplace pas le formulaire « Sécurité des données » de Google Play Console. Les déclarations de Play Console doivent correspondre au comportement réel de l'application, y compris celui des SDK et prestataires intégrés.</div>
-<h2>Données utilisées pour le compte et la progression</h2>
-<p>Selon les fonctions activées, Mottelo peut traiter les catégories suivantes :</p>
-<ul><li>Informations de compte : adresse e-mail et identifiant technique d'authentification.</li><li>Informations de profil : pseudonyme/nom d'utilisateur.</li><li>Activité dans l'application : progression, statistiques ou état de jeu nécessaires à la synchronisation.</li><li>Préférences : thème, langue et paramètres enregistrés.</li><li>Achats intégrés : uniquement si cette fonction est disponible dans la version publiée ; vérifiez les données reçues et traitées par Google Play Billing et votre serveur.</li></ul>
-<h2>Utilisation et partage</h2><p>Les données de compte et de synchronisation servent à fournir les fonctions demandées et sont traitées par les services techniques utilisés, notamment Supabase selon la configuration actuelle. Ajoutez toute autre SDK ou prestataire réellement présent dans l'application.</p>
-<h2>Mesures de sécurité</h2><ul><li>Contrôle des accès aux données et règles de sécurité de la base (à vérifier sur chaque table exposée).</li><li>Transmission chiffrée via HTTPS/TLS lorsque configurée.</li><li>Clés privilégiées conservées côté serveur et non dans l'application cliente.</li><li>Fonction de suppression du compte accessible dans l'application et procédure de suppression en ligne.</li></ul>
-<h2>Contrôle et suppression</h2><p>Vous pouvez demander la suppression de votre compte et des données associées depuis la fonctionnalité de compte de l'application, si elle est disponible, ou suivre les instructions de la page <a href="account-deletion.html">Suppression du compte</a>.</p>
-<h2>À vérifier dans Google Play Console</h2>
-<ul><li>Catégories exactes collectées et partagées par l'application et toutes ses bibliothèques.</li><li>Finalité de chaque donnée et caractère obligatoire ou facultatif.</li><li>Chiffrement en transit et mécanismes d'authentification réellement utilisés.</li><li>Possibilité de demander la suppression et portée effective de la suppression.</li><li>Déclaration séparée des données collectées par publicité, analytics, crash reporting ou autres SDK, s'ils existent.</li></ul>
-<p><strong>Éditeur / contact :</strong> À COMPLÉTER — nom légal et e-mail.</p><p><a href="privacy-policy.html">Politique de confidentialité</a> · <a href="terms.html">CGU</a></p>
-</body></html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Sécurité des données — Mottelo</title>
+<meta name="description" content="Résumé des données collectées, partagées et protégées par l’application Mottelo.">
+<meta name="theme-color" content="#25106a">
+<link rel="icon" href="logo.png" type="image/png">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top"><div class="in">
+<a class="brand" href="index.html"><img src="logo.png" alt="" width="36" height="36">Mottelo</a>
+<nav aria-label="Pages légales"><a href="index.html">Accueil</a><a href="privacy-policy.html">Confidentialité</a><a href="terms.html">CGU</a><a href="sales-terms.html">Conditions de vente</a><a href="account-deletion.html">Suppression du compte</a><a href="data-safety.html" aria-current="page">Sécurité des données</a><a href="legal-notice.html">Mentions légales</a></nav>
+</div></header>
+<main>
+
+<h1>Sécurité des données</h1>
+<p class="muted">Dernière mise à jour : 25 octobre 2026</p>
+<p>Résumé des pratiques de Mottelo en matière de données. Le détail figure dans la <a href="privacy-policy.html">politique de confidentialité</a>.</p>
+
+<h2>En bref</h2>
+<ul>
+<li>Vos données ne sont <strong>pas vendues</strong>.</li>
+<li>Aucun outil d’analyse d’audience ni de rapport de plantage tiers.</li>
+<li>Les données de compte sont hébergées dans l’Union européenne (Stockholm, Suède).</li>
+<li>Les échanges sont chiffrés (HTTPS/TLS).</li>
+<li>Vous pouvez supprimer votre compte et vos données <a href="account-deletion.html">dans l’application ou par e-mail</a>.</li>
+</ul>
+
+<h2>Données collectées</h2>
+<div class="tw"><table><thead><tr><th>Donnée</th><th>Collectée</th><th>Partagée</th><th>Facultatif ?</th><th>Pourquoi</th></tr></thead><tbody><tr><td>Adresse e-mail</td><td>Oui (avec compte)</td><td>Non (hébergée chez Supabase, sous-traitant)</td><td>Oui : on peut jouer sans compte</td><td>Gestion du compte, connexion, récupération du mot de passe</td></tr><tr><td>Pseudo et identifiant du compte</td><td>Oui (avec compte)</td><td>Non</td><td>Oui</td><td>Profil, fonctionnement du compte</td></tr><tr><td>Progression et statistiques de jeu</td><td>Oui (avec compte)</td><td>Non</td><td>Oui</td><td>Synchronisation entre appareils</td></tr><tr><td>Achats intégrés (produit, jeton d’achat)</td><td>Oui, lors d’un achat</td><td>Avec Google Play pour valider l’achat</td><td>Oui</td><td>Créditer vos achats, éviter la fraude</td></tr><tr><td>Identifiant publicitaire, adresse IP, informations sur l’appareil, interactions avec les publicités</td><td>Oui, par le SDK publicitaire</td><td>Oui, avec Google AdMob</td><td>Non, pour afficher des publicités</td><td>Publicité et mesure de leur diffusion</td></tr><tr><td>Localisation précise</td><td>Non</td><td>—</td><td>—</td><td>—</td></tr><tr><td>Contacts, photos, micro, appareil photo, SMS</td><td>Non</td><td>—</td><td>—</td><td>—</td></tr></tbody></table></div>
+
+<h2>Sécurité</h2>
+<ul>
+<li>Chiffrement des échanges entre l’application et les serveurs.</li>
+<li>Mots de passe stockés sous forme chiffrée irréversible.</li>
+<li>Chaque joueur n’accède qu’à ses propres données (règles de sécurité de la base).</li>
+<li>Clés d’administration conservées côté serveur, jamais dans l’application.</li>
+<li>Suppression de compte protégée par le mot de passe, vérifié par le serveur.</li>
+</ul>
+
+<h2>Contrôle et suppression</h2>
+<p>Dans l’application : <em>Mon Compte</em> (modifier, supprimer) et <em>Paramètres &gt; Mes données</em> (exporter, effacer les données locales). Par e-mail : <a href="mailto:mrwolff42@gmail.com">mrwolff42@gmail.com</a>. Procédure complète : <a href="account-deletion.html">Suppression du compte</a>.</p>
+
+</main>
+<footer>Éditeur : CEDRIC P · Contact : <a href="mailto:mrwolff42@gmail.com">mrwolff42@gmail.com</a> · Dernière mise à jour : 25 octobre 2026</footer>
+</body>
+</html>
