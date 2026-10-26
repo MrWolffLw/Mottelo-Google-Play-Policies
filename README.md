@@ -22,4 +22,4 @@ Pages statiques pour GitHub Pages. Aucun outil de build : il suffit d'envoyer ce
 - URL de suppression de compte : `.../account-deletion.html`
 
 ## Modifier un texte
-Chaque page est un fichier HTML simple. Cherchez le texte et modifiez-le. Les infos de l'éditeur (CEDRIC P, mrwolff42@gmail.com) et la date apparaissent dans plusieurs pages : faites une recherche/remplacement dans tout le dépôt.
+Chaque page est un fichier HTML simple. Cherchez le texte et modifiez-le. Les infos de l'éditeur (CEDRIC P, mrwolfflw42@gmail.com) et la date apparaissent dans plusieurs pages : faites une recherche/remplacement dans tout le dépôt.
